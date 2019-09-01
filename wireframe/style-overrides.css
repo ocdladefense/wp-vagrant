@@ -31,7 +31,7 @@ body{
 	padding:20px;
 }
 .site-header{
-	background-image:linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url(/wp-content/themes/twentyseventeen/assets/images/hero-image.jpg);
+	background-image:linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url(/wp-content/themes/wireframe/assets/images/hero-image.jpg);
 	background-repeat: no-repeat;
 	margin:auto;
 	background-size: cover;
