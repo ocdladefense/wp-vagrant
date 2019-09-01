@@ -28,7 +28,7 @@
 	<div class="panel-content">
 		<div class="wrap">
 			<div class="entry-content">
-			<?php twentyseventeen_edit_link( get_the_ID() ); ?>
+			<?php wireframe_edit_link( get_the_ID() ); ?>
 			<a href="<?php the_permalink(); ?>"><?php the_title( '<h1 class="entry-title">', '</h1>' ); ?></a>
 				<?php
 					/* translators: %s: Name of current post */
