@@ -42,10 +42,14 @@
 			<?php
 			the_custom_logo(); ?>
 
-			<strong class="tagline"> <?php if (get_bloginfo() == null)
-			echo "Your Company Tagline Here";
-			
-			echo get_bloginfo( 'description', 'display' ); ?> </strong>
+			<strong class="tagline"> 
+				<?php 
+					if (get_bloginfo( 'description', 'display' ) == "")
+						echo "Your Company Tagline Here";
+					else
+						echo get_bloginfo( 'description', 'display' ); 
+				?>
+			</strong>
 
 			<?php
 				if ( is_active_sidebar( 'sidebar-4' ) ) {

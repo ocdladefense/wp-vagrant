@@ -42,20 +42,20 @@ get_header(); ?>
 		<div class="homePageMenus">
 			<div class="homepage-menu-column">
 				<div class="trevor-menu trevor-about-menus">
-					<div class="trevor-menu-label trevor-about-menu-label">ABOUT OCDLA</div>
+					<div class="trevor-menu-label trevor-about-menu-label">Menu #1</div>
 					<?php
 						wp_nav_menu( array('theme_location' => 'aboutOCDLA'));
 					?>
 				</div>
 				<div class="trevor-menu trevor-member-menus">
-					<div class="trevor-menu-label trevor-members-menu-label">MEMBERS</div>
+					<div class="trevor-menu-label trevor-members-menu-label">Menu #2</div>
 					<?php
 						wp_nav_menu( array('theme_location' => 'members'));
 					?>
 				</div>
 			</div>
 			<div class="trevor-menu trevor-resources-menus">
-				<div class="trevor-menu-label trevor-resources-menu-label">RESOURCES & DATABASES</div>
+				<div class="trevor-menu-label trevor-resources-menu-label">Menu #3</div>
 				<?php
 				wp_nav_menu( array('theme_location' => 'resourcesAndDatabases'));?>
 			</div>
