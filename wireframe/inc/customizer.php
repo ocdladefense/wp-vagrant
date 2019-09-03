@@ -3,7 +3,7 @@
  * Twenty Seventeen: Customizer
  *
  * @package WordPress
- * @subpackage Twenty_Seventeen
+ * @subpackage wireframe
  * @since 1.0
  */
 
@@ -57,11 +57,11 @@ function wireframe_customize_register( $wp_customize ) {
 		'colorscheme',
 		array(
 			'type'     => 'radio',
-			'label'    => __( 'Color Scheme', 'twentyseventeen' ),
+			'label'    => __( 'Color Scheme', 'wireframe' ),
 			'choices'  => array(
-				'light'  => __( 'Light', 'twentyseventeen' ),
-				'dark'   => __( 'Dark', 'twentyseventeen' ),
-				'custom' => __( 'Custom', 'twentyseventeen' ),
+				'light'  => __( 'Light', 'wireframe' ),
+				'dark'   => __( 'Dark', 'wireframe' ),
+				'custom' => __( 'Custom', 'wireframe' ),
 			),
 			'section'  => 'colors',
 			'priority' => 5,
@@ -86,7 +86,7 @@ function wireframe_customize_register( $wp_customize ) {
 	$wp_customize->add_section(
 		'theme_options',
 		array(
-			'title'    => __( 'Theme Options', 'twentyseventeen' ),
+			'title'    => __( 'Theme Options', 'wireframe' ),
 			'priority' => 130, // Before Additional CSS.
 		)
 	);
@@ -103,13 +103,13 @@ function wireframe_customize_register( $wp_customize ) {
 	$wp_customize->add_control(
 		'page_layout',
 		array(
-			'label'           => __( 'Page Layout', 'twentyseventeen' ),
+			'label'           => __( 'Page Layout', 'wireframe' ),
 			'section'         => 'theme_options',
 			'type'            => 'radio',
-			'description'     => __( 'When the two-column layout is assigned, the page title is in one column and content is in the other.', 'twentyseventeen' ),
+			'description'     => __( 'When the two-column layout is assigned, the page title is in one column and content is in the other.', 'wireframe' ),
 			'choices'         => array(
-				'one-column' => __( 'One Column', 'twentyseventeen' ),
-				'two-column' => __( 'Two Column', 'twentyseventeen' ),
+				'one-column' => __( 'One Column', 'wireframe' ),
+				'two-column' => __( 'Two Column', 'wireframe' ),
 			),
 			'active_callback' => 'wireframe_is_view_with_layout_option',
 		)
@@ -139,8 +139,8 @@ function wireframe_customize_register( $wp_customize ) {
 			'panel_' . $i,
 			array(
 				/* translators: %d is the front page section number */
-				'label'           => sprintf( __( 'Front Page Section %d Content', 'twentyseventeen' ), $i ),
-				'description'     => ( 1 !== $i ? '' : __( 'Select pages to feature in each area from the dropdowns. Add an image to a section by setting a featured image in the page editor. Empty sections will not be displayed.', 'twentyseventeen' ) ),
+				'label'           => sprintf( __( 'Front Page Section %d Content', 'wireframe' ), $i ),
+				'description'     => ( 1 !== $i ? '' : __( 'Select pages to feature in each area from the dropdowns. Add an image to a section by setting a featured image in the page editor. Empty sections will not be displayed.', 'wireframe' ) ),
 				'section'         => 'theme_options',
 				'type'            => 'dropdown-pages',
 				'allow_addition'  => true,
@@ -167,8 +167,8 @@ add_action( 'customize_register', 'wireframe_customize_register' );
  */
 function wireframe_sanitize_page_layout( $input ) {
 	$valid = array(
-		'one-column' => __( 'One Column', 'twentyseventeen' ),
-		'two-column' => __( 'Two Column', 'twentyseventeen' ),
+		'one-column' => __( 'One Column', 'wireframe' ),
+		'two-column' => __( 'Two Column', 'wireframe' ),
 	);
 
 	if ( array_key_exists( $input, $valid ) ) {
@@ -236,7 +236,7 @@ function wireframe_is_view_with_layout_option() {
  * Bind JS handlers to instantly live-preview changes.
  */
 function wireframe_customize_preview_js() {
-	wp_enqueue_script( 'twentyseventeen-customize-preview', get_theme_file_uri( '/assets/js/customize-preview.js' ), array( 'customize-preview' ), '1.0', true );
+	wp_enqueue_script( 'wireframe-customize-preview', get_theme_file_uri( '/assets/js/customize-preview.js' ), array( 'customize-preview' ), '1.0', true );
 }
 add_action( 'customize_preview_init', 'wireframe_customize_preview_js' );
 
@@ -244,6 +244,6 @@ add_action( 'customize_preview_init', 'wireframe_customize_preview_js' );
  * Load dynamic logic for the customizer controls area.
  */
 function wireframe_panels_js() {
-	wp_enqueue_script( 'twentyseventeen-customize-controls', get_theme_file_uri( '/assets/js/customize-controls.js' ), array(), '1.0', true );
+	wp_enqueue_script( 'wireframe-customize-controls', get_theme_file_uri( '/assets/js/customize-controls.js' ), array(), '1.0', true );
 }
 add_action( 'customize_controls_enqueue_scripts', 'wireframe_panels_js' );

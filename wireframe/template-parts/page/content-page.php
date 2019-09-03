@@ -5,7 +5,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package WordPress
- * @subpackage Twenty_Seventeen
+ * @subpackage wireframe
  * @since 1.0
  * @version 1.0
  */
@@ -23,7 +23,7 @@
 
 			wp_link_pages(
 				array(
-					'before' => '<div class="page-links">' . __( 'Pages:', 'twentyseventeen' ),
+					'before' => '<div class="page-links">' . __( 'Pages:', 'wireframe' ),
 					'after'  => '</div>',
 				)
 			);

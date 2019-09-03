@@ -7,7 +7,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
  * @package WordPress
- * @subpackage Twenty_Seventeen
+ * @subpackage wireframe
  * @since 1.0
  * @version 1.0
  */
@@ -25,7 +25,7 @@
 
 <body <?php body_class(); ?>>
 	<div id="page" class="site">
-		<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentyseventeen' ); ?></a>
+		<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'wireframe' ); ?></a>
 		
 
 		<div class="flex-container global-header" >
@@ -40,8 +40,6 @@
 			<?php the_custom_logo(); ?>
 
 			<strong class="tagline"> <?php echo get_bloginfo( 'description', 'display' ); ?> </strong>
-
-			<!-- <strong class="tagline">Strength in Numbers. Fairness in Justice</strong> -->
 
 			<?php
 				if ( is_active_sidebar( 'sidebar-4' ) ) {
@@ -86,7 +84,7 @@
 		*/
 		if ( ( is_single() || ( is_page() && ! wireframe_is_frontpage() ) ) && has_post_thumbnail( get_queried_object_id() ) ) :
 			echo '<div class="single-featured-image-header">';
-			echo get_the_post_thumbnail( get_queried_object_id(), 'twentyseventeen-featured-image' );
+			echo get_the_post_thumbnail( get_queried_object_id(), 'wireframe-featured-image' );
 			echo '</div><!-- .single-featured-image-header -->';
 		endif;
 		?>

@@ -5,7 +5,7 @@
  * Eventually, some of the functionality here could be replaced by core features.
  *
  * @package WordPress
- * @subpackage Twenty_Seventeen
+ * @subpackage wireframe
  * @since 1.0
  */
 
@@ -18,7 +18,7 @@ if ( ! function_exists( 'wireframe_posted_on' ) ) :
 		// Get the author name; wrap it in a link.
 		$byline = sprintf(
 			/* translators: %s: post author */
-			__( 'by %s', 'twentyseventeen' ),
+			__( 'by %s', 'wireframe' ),
 			'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . get_the_author() . '</a></span>'
 		);
 
@@ -49,7 +49,7 @@ if ( ! function_exists( 'wireframe_time_link' ) ) :
 		// Wrap the time string in a link, and preface it with 'Posted on'.
 		return sprintf(
 			/* translators: %s: post date */
-			__( '<span class="screen-reader-text">Posted on</span> %s', 'twentyseventeen' ),
+			__( '<span class="screen-reader-text">Posted on</span> %s', 'wireframe' ),
 			'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 		);
 	}
@@ -63,7 +63,7 @@ if ( ! function_exists( 'wireframe_entry_footer' ) ) :
 	function wireframe_entry_footer() {
 
 		/* translators: used between list items, there is a space after the comma */
-		$separate_meta = __( ', ', 'twentyseventeen' );
+		$separate_meta = __( ', ', 'wireframe' );
 
 		// Get Categories for posts.
 		$categories_list = get_the_category_list( $separate_meta );
@@ -82,11 +82,11 @@ if ( ! function_exists( 'wireframe_entry_footer' ) ) :
 
 						// Make sure there's more than one category before displaying.
 					if ( $categories_list && wireframe_categorized_blog() ) {
-						echo '<span class="cat-links">' . wireframe_get_svg( array( 'icon' => 'folder-open' ) ) . '<span class="screen-reader-text">' . __( 'Categories', 'twentyseventeen' ) . '</span>' . $categories_list . '</span>';
+						echo '<span class="cat-links">' . wireframe_get_svg( array( 'icon' => 'folder-open' ) ) . '<span class="screen-reader-text">' . __( 'Categories', 'wireframe' ) . '</span>' . $categories_list . '</span>';
 					}
 
 					if ( $tags_list && ! is_wp_error( $tags_list ) ) {
-						echo '<span class="tags-links">' . wireframe_get_svg( array( 'icon' => 'hashtag' ) ) . '<span class="screen-reader-text">' . __( 'Tags', 'twentyseventeen' ) . '</span>' . $tags_list . '</span>';
+						echo '<span class="tags-links">' . wireframe_get_svg( array( 'icon' => 'hashtag' ) ) . '<span class="screen-reader-text">' . __( 'Tags', 'wireframe' ) . '</span>' . $tags_list . '</span>';
 					}
 
 					echo '</span>';
@@ -114,7 +114,7 @@ if ( ! function_exists( 'wireframe_edit_link' ) ) :
 		edit_post_link(
 			sprintf(
 				/* translators: %s: Name of current post */
-				__( 'Edit<span class="screen-reader-text"> "%s"</span>', 'twentyseventeen' ),
+				__( 'Edit<span class="screen-reader-text"> "%s"</span>', 'wireframe' ),
 				get_the_title()
 			),
 			'<span class="edit-link">',
@@ -132,9 +132,9 @@ endif;
 function wireframe_front_page_section( $partial = null, $id = 0 ) {
 	if ( is_a( $partial, 'WP_Customize_Partial' ) ) {
 		// Find out the id and set it up during a selective refresh.
-		global $twentyseventeencounter;
+		global $wireframecounter;
 		$id                     = str_replace( 'panel_', '', $partial->id );
-		$twentyseventeencounter = $id;
+		$wireframecounter = $id;
 	}
 
 	global $post; // Modify the global post object before setting up post data.
@@ -148,7 +148,7 @@ function wireframe_front_page_section( $partial = null, $id = 0 ) {
 		wp_reset_postdata();
 	} elseif ( is_customize_preview() ) {
 		// The output placeholder anchor.
-		echo '<article class="panel-placeholder panel twentyseventeen-panel twentyseventeen-panel' . $id . '" id="panel' . $id . '"><span class="twentyseventeen-panel-title">' . sprintf( __( 'Front Page Section %1$s Placeholder', 'twentyseventeen' ), $id ) . '</span></article>';
+		echo '<article class="panel-placeholder panel wireframe-panel wireframe-panel' . $id . '" id="panel' . $id . '"><span class="wireframe-panel-title">' . sprintf( __( 'Front Page Section %1$s Placeholder', 'wireframe' ), $id ) . '</span></article>';
 	}
 }
 

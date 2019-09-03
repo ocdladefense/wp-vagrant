@@ -3,7 +3,7 @@
  * Additional features to allow styling of the templates
  *
  * @package WordPress
- * @subpackage Twenty_Seventeen
+ * @subpackage wireframe
  * @since 1.0
  */
 
@@ -26,12 +26,12 @@ function wireframe_body_classes( $classes ) {
 
 	// Add class if we're viewing the Customizer for easier styling of theme options.
 	if ( is_customize_preview() ) {
-		$classes[] = 'twentyseventeen-customizer';
+		$classes[] = 'wireframe-customizer';
 	}
 
 	// Add class on front page.
 	if ( is_front_page() && 'posts' !== get_option( 'show_on_front' ) ) {
-		$classes[] = 'twentyseventeen-front-page';
+		$classes[] = 'wireframe-front-page';
 	}
 
 	// Add a class if there is a custom header.

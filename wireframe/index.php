@@ -10,7 +10,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package WordPress
- * @subpackage Twenty_Seventeen
+ * @subpackage wireframe
  * @since 1.0
  * @version 1.0
  */
@@ -25,7 +25,7 @@ get_header(); ?>
 		</header>
 	<?php else : ?>
 	<header class="page-header">
-		<h2 class="page-title"><?php _e( 'Posts', 'twentyseventeen' ); ?></h2>
+		<h2 class="page-title"><?php _e( 'Posts', 'wireframe' ); ?></h2>
 	</header>
 	<?php endif; ?>
 
@@ -50,9 +50,9 @@ get_header(); ?>
 
 				the_posts_pagination(
 					array(
-						'prev_text'          => wireframe_get_svg( array( 'icon' => 'arrow-left' ) ) . '<span class="screen-reader-text">' . __( 'Previous page', 'twentyseventeen' ) . '</span>',
-						'next_text'          => '<span class="screen-reader-text">' . __( 'Next page', 'twentyseventeen' ) . '</span>' . wireframe_get_svg( array( 'icon' => 'arrow-right' ) ),
-						'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentyseventeen' ) . ' </span>',
+						'prev_text'          => wireframe_get_svg( array( 'icon' => 'arrow-left' ) ) . '<span class="screen-reader-text">' . __( 'Previous page', 'wireframe' ) . '</span>',
+						'next_text'          => '<span class="screen-reader-text">' . __( 'Next page', 'wireframe' ) . '</span>' . wireframe_get_svg( array( 'icon' => 'arrow-right' ) ),
+						'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'wireframe' ) . ' </span>',
 					)
 				);
 

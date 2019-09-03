@@ -3,7 +3,7 @@
  * Displays footer site info
  *
  * @package WordPress
- * @subpackage Twenty_Seventeen
+ * @subpackage wireframe
  * @since 1.0
  * @version 1.0
  */
@@ -15,7 +15,7 @@
 		the_privacy_policy_link( '', '<span role="separator" aria-hidden="true"></span>' );
 	}
 	?>
-	<a href="<?php echo esc_url( __( 'https://info@ocdla.org/', 'twentyseventeen' ) ); ?>" class="imprint">
+	<a href="<?php echo esc_url( __( 'https://info@ocdla.org/', 'wireframe' ) ); ?>" class="imprint">
 		<?php printf( __( 'Your Company, Your Street, City, State, Zip Code - ###.###.#### - info@yourSite.com', 'wireframe' ), 'WordPress' ); ?>
 	</a>
 </div><!-- .site-info -->

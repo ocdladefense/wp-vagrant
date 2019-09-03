@@ -23,7 +23,7 @@ get_header(); ?>
 	<?php if(USE_SIDEBAR_MENU): ?>
 	<div class="custom-sidebar structure">
 	
-		<nav class="navigation" role="navigation" aria-label="<?php esc_attr_e( 'Sidebar Menu', 'twentyseventeen' ); ?>">
+		<nav class="navigation" role="navigation" aria-label="<?php esc_attr_e( 'Sidebar Menu', 'wireframe' ); ?>">
 			<?php
 				wp_nav_menu(
 					array(
