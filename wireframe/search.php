@@ -5,7 +5,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
  *
  * @package WordPress
- * @subpackage Twenty_Seventeen
+ * @subpackage wireframe
  * @since 1.0
  * @version 1.0
  */
@@ -16,9 +16,9 @@ get_header(); ?>
 
 	<header class="page-header">
 		<?php if ( have_posts() ) : ?>
-			<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'twentyseventeen' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+			<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'wireframe' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 		<?php else : ?>
-			<h1 class="page-title"><?php _e( 'Nothing Found', 'twentyseventeen' ); ?></h1>
+			<h1 class="page-title"><?php _e( 'Nothing Found', 'wireframe' ); ?></h1>
 		<?php endif; ?>
 	</header><!-- .page-header -->
 
@@ -42,16 +42,16 @@ get_header(); ?>
 
 			the_posts_pagination(
 				array(
-					'prev_text'          => wireframe_get_svg( array( 'icon' => 'arrow-left' ) ) . '<span class="screen-reader-text">' . __( 'Previous page', 'twentyseventeen' ) . '</span>',
-					'next_text'          => '<span class="screen-reader-text">' . __( 'Next page', 'twentyseventeen' ) . '</span>' . wireframe_get_svg( array( 'icon' => 'arrow-right' ) ),
-					'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentyseventeen' ) . ' </span>',
+					'prev_text'          => wireframe_get_svg( array( 'icon' => 'arrow-left' ) ) . '<span class="screen-reader-text">' . __( 'Previous page', 'wireframe' ) . '</span>',
+					'next_text'          => '<span class="screen-reader-text">' . __( 'Next page', 'wireframe' ) . '</span>' . wireframe_get_svg( array( 'icon' => 'arrow-right' ) ),
+					'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'wireframe' ) . ' </span>',
 				)
 			);
 
 		else :
 			?>
 
-			<p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'twentyseventeen' ); ?></p>
+			<p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'wireframe' ); ?></p>
 			<?php
 				get_search_form();
 

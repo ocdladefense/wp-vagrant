@@ -5,7 +5,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package WordPress
- * @subpackage Twenty_Seventeen
+ * @subpackage wireframe
  * @since 1.0
  * @version 1.2
  */
@@ -44,7 +44,7 @@
 	<?php if ( '' !== get_the_post_thumbnail() && ! is_single() ) : ?>
 		<div class="post-thumbnail">
 			<a href="<?php the_permalink(); ?>">
-				<?php the_post_thumbnail( 'twentyseventeen-featured-image' ); ?>
+				<?php the_post_thumbnail( 'wireframe-featured-image' ); ?>
 			</a>
 		</div><!-- .post-thumbnail -->
 	<?php endif; ?>
@@ -54,14 +54,14 @@
 		/* translators: %s: Name of current post */
 		the_content(
 			sprintf(
-				__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'twentyseventeen' ),
+				__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'wireframe' ),
 				get_the_title()
 			)
 		);
 
 		wp_link_pages(
 			array(
-				'before'      => '<div class="page-links">' . __( 'Pages:', 'twentyseventeen' ),
+				'before'      => '<div class="page-links">' . __( 'Pages:', 'wireframe' ),
 				'after'       => '</div>',
 				'link_before' => '<span class="page-number">',
 				'link_after'  => '</span>',

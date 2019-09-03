@@ -3,20 +3,20 @@
  * Template part for displaying pages on front page
  *
  * @package WordPress
- * @subpackage Twenty_Seventeen
+ * @subpackage wireframe
  * @since 1.0
  * @version 1.0
  */
 
-global $twentyseventeencounter;
+global $wireframecounter;
 
 ?>
 
-<article id="panel<?php echo $twentyseventeencounter; ?>" <?php post_class( 'twentyseventeen-panel ' ); ?> >
+<article id="panel<?php echo $wireframecounter; ?>" <?php post_class( 'wireframe-panel ' ); ?> >
 
 	<?php
 	if ( has_post_thumbnail() ) :
-		$thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'twentyseventeen-featured-image' );
+		$thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'wireframe-featured-image' );
 
 		// Calculate aspect ratio: h / w * 100%.
 		$ratio = $thumbnail[2] / $thumbnail[1] * 100;
@@ -42,7 +42,7 @@ global $twentyseventeencounter;
 					/* translators: %s: Name of current post */
 					the_content(
 						sprintf(
-							__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'twentyseventeen' ),
+							__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'wireframe' ),
 							get_the_title()
 						)
 					);

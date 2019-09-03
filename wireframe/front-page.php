@@ -7,7 +7,7 @@
  * Learn more: https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package WordPress
- * @subpackage Twenty_Seventeen
+ * @subpackage wireframe
  * @since 1.0
  * @version 1.0
  */
@@ -28,11 +28,11 @@ get_header(); ?>
 			 * @param int $num_sections Number of front page sections.
 			 */
 			$num_sections = apply_filters( 'wireframe_front_page_sections', 4 );
-			global $twentyseventeencounter;
+			global $wireframecounter;
 
 			// Create a setting and control for each of the sections available in the theme.
 			for ( $i = 1; $i < ( 1 + $num_sections ); $i++ ) {
-				$twentyseventeencounter = $i;
+				$wireframecounter = $i;
 				wireframe_front_page_section( null, $i );
 			}
 
@@ -62,7 +62,7 @@ get_header(); ?>
 		</div>
 
 		<div class="menuImage" id="menuImage">
-			<img class="theImg" src="/wp-content/themes/twentyseventeen/assets/images/Capture.PNG" />
+			<img class="theImg" src="/wp-content/themes/wireframe/assets/images/Capture.PNG" />
 		</div>
 		<h1 class="announcments-label">Announcements</h1>
 		<div class="trevor-posts-container">

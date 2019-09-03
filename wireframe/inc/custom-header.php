@@ -5,7 +5,7 @@
  * @link https://codex.wordpress.org/Custom_Headers
  *
  * @package WordPress
- * @subpackage Twenty_Seventeen
+ * @subpackage wireframe
  * @since 1.0
  */
 
@@ -53,7 +53,7 @@ function wireframe_custom_header_setup() {
 			'default-image' => array(
 				'url'           => '%s/assets/images/header.jpg',
 				'thumbnail_url' => '%s/assets/images/header.jpg',
-				'description'   => __( 'Default Header Image', 'twentyseventeen' ),
+				'description'   => __( 'Default Header Image', 'wireframe' ),
 			),
 		)
 	);
@@ -77,7 +77,7 @@ if ( ! function_exists( 'wireframe_header_style' ) ) :
 
 		// If we get this far, we have custom styles. Let's do this.
 		?>
-		<style id="twentyseventeen-custom-header-styles" type="text/css">
+		<style id="wireframe-custom-header-styles" type="text/css">
 		<?php
 		// Has the text been hidden?
 		if ( 'blank' === $header_text_color ) :
@@ -124,8 +124,8 @@ endif; // End of wireframe_header_style.
  * @return array The filtered video settings.
  */
 function wireframe_video_controls( $settings ) {
-	$settings['l10n']['play']  = '<span class="screen-reader-text">' . __( 'Play background video', 'twentyseventeen' ) . '</span>' . wireframe_get_svg( array( 'icon' => 'play' ) );
-	$settings['l10n']['pause'] = '<span class="screen-reader-text">' . __( 'Pause background video', 'twentyseventeen' ) . '</span>' . wireframe_get_svg( array( 'icon' => 'pause' ) );
+	$settings['l10n']['play']  = '<span class="screen-reader-text">' . __( 'Play background video', 'wireframe' ) . '</span>' . wireframe_get_svg( array( 'icon' => 'play' ) );
+	$settings['l10n']['pause'] = '<span class="screen-reader-text">' . __( 'Pause background video', 'wireframe' ) . '</span>' . wireframe_get_svg( array( 'icon' => 'pause' ) );
 	return $settings;
 }
 add_filter( 'header_video_settings', 'wireframe_video_controls' );

@@ -5,7 +5,7 @@
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
  * @package WordPress
- * @subpackage Twenty_Seventeen
+ * @subpackage wireframe
  * @since 1.0
  */
 
@@ -27,7 +27,7 @@ if ( version_compare( $GLOBALS['wp_version'], '4.7-alpha', '<' ) ) {
 function wireframe_setup() {
 	/*
 	 * Make theme available for translation.
-	 * Translations can be filed at WordPress.org. See: https://translate.wordpress.org/projects/wp-themes/twentyseventeen
+	 * Translations can be filed at WordPress.org. See: https://translate.wordpress.org/projects/wp-themes/wireframe
 	 * If you're building a theme based on Wireframe, use a find and replace
 	 * to change 'wireframe' to the name of your theme in all the template files.
 	 */
@@ -61,12 +61,12 @@ function wireframe_setup() {
 	// This theme uses wp_nav_menu() in five locations.
 	register_nav_menus(
 		array(
-			'top' => __( 'Top Menu (Short list of key pages located at the top of the page.)', 'twentyseventeen' ),
-			'main' => __('Main Menu (Hamburger Menu)', 'twentyseventeen'),
-			'aboutOCDLA' => __('About OCDLA', 'twentyseventeen' ),
-			'members' => __('Members', 'twentyseventeen'),
-			'resourcesAndDatabases' => __('Resources and Databases', 'twentyseventeen'),
-			'social' => __( 'Social Links Menu', 'twentyseventeen' ),
+			'top' => __( 'Top Menu (Short list of key pages located at the top of the page.)', 'wireframe' ),
+			'main' => __('Main Menu (Hamburger Menu)', 'wireframe'),
+			'aboutOCDLA' => __('About OCDLA', 'wireframe' ),
+			'members' => __('Members', 'wireframe'),
+			'resourcesAndDatabases' => __('Resources and Databases', 'wireframe'),
+			'social' => __( 'Social Links Menu', 'wireframe' ),
 		)
 	);
 
@@ -176,15 +176,15 @@ function wireframe_setup() {
 		// Create the custom image attachments used as post thumbnails for pages.
 		'attachments' => array(
 			'image-espresso' => array(
-				'post_title' => _x( 'Espresso', 'Theme starter content', 'twentyseventeen' ),
+				'post_title' => _x( 'Espresso', 'Theme starter content', 'wireframe' ),
 				'file'       => 'assets/images/espresso.jpg', // URL relative to the template directory.
 			),
 			'image-sandwich' => array(
-				'post_title' => _x( 'Sandwich', 'Theme starter content', 'twentyseventeen' ),
+				'post_title' => _x( 'Sandwich', 'Theme starter content', 'wireframe' ),
 				'file'       => 'assets/images/sandwich.jpg',
 			),
 			'image-coffee'   => array(
-				'post_title' => _x( 'Coffee', 'Theme starter content', 'twentyseventeen' ),
+				'post_title' => _x( 'Coffee', 'Theme starter content', 'wireframe' ),
 				'file'       => 'assets/images/coffee.jpg',
 			),
 		),
@@ -208,7 +208,7 @@ function wireframe_setup() {
 		'nav_menus'   => array(
 			// Assign a menu to the "top" location.
 			'top'    => array(
-				'name'  => __( 'Top Menu', 'twentyseventeen' ),
+				'name'  => __( 'Top Menu', 'wireframe' ),
 				'items' => array(
 					'link_home', // Note that the core "home" page is actually a link in case a static front page is not used.
 					'page_about',
@@ -219,7 +219,7 @@ function wireframe_setup() {
 
 			// Assign a menu to the "social" location.
 			'social' => array(
-				'name'  => __( 'Social Links Menu', 'twentyseventeen' ),
+				'name'  => __( 'Social Links Menu', 'wireframe' ),
 				'items' => array(
 					'link_yelp',
 					'link_facebook',
@@ -294,7 +294,7 @@ function wireframe_fonts_url() {
 	 * supported by Libre Franklin, translate this to 'off'. Do not translate
 	 * into your own language.
 	 */
-	$libre_franklin = _x( 'on', 'Libre Franklin font: on or off', 'twentyseventeen' );
+	$libre_franklin = _x( 'on', 'Libre Franklin font: on or off', 'wireframe' );
 
 	if ( 'off' !== $libre_franklin ) {
 		$font_families = array();
@@ -324,9 +324,9 @@ function wireframe_fonts_url() {
 function wireframe_widgets_init() {
 	register_sidebar(
 		array(
-			'name'          => __( 'Interchangable Right Sidebar', 'twentyseventeen' ),
+			'name'          => __( 'Interchangable Right Sidebar', 'wireframe' ),
 			'id'            => 'sidebar-1',
-			'description'   => __( 'Add widgets here to appear in your right sidebar on blog posts and archive pages.', 'twentyseventeen' ),
+			'description'   => __( 'Add widgets here to appear in your right sidebar on blog posts and archive pages.', 'wireframe' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
@@ -335,9 +335,9 @@ function wireframe_widgets_init() {
 	);
 	register_sidebar(
 		array(
-			'name'          => __( 'Interchangeable Left Sidebar', 'twentyseventeen' ),
+			'name'          => __( 'Interchangeable Left Sidebar', 'wireframe' ),
 			'id'            => 'sidebar-5',
-			'description'   => __( 'Add widgets here to appear in your left sidebar on blog posts and archive pages.', 'twentyseventeen' ),
+			'description'   => __( 'Add widgets here to appear in your left sidebar on blog posts and archive pages.', 'wireframe' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
@@ -347,9 +347,9 @@ function wireframe_widgets_init() {
 
 	register_sidebar(
 		array(
-			'name'          => __( 'Banner Widget Area', 'twentyseventeen' ),
+			'name'          => __( 'Banner Widget Area', 'wireframe' ),
 			'id'            => 'sidebar-2',
-			'description'   => __( 'Add widgets here to appear in your banner area.', 'twentyseventeen' ),
+			'description'   => __( 'Add widgets here to appear in your banner area.', 'wireframe' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
@@ -359,9 +359,9 @@ function wireframe_widgets_init() {
 
 	register_sidebar(
 		array(
-			'name'          => __( 'Footer Widget Area', 'twentyseventeen' ),
+			'name'          => __( 'Footer Widget Area', 'wireframe' ),
 			'id'            => 'sidebar-3',
-			'description'   => __( 'Add widgets here to appear in your footer.', 'twentyseventeen' ),
+			'description'   => __( 'Add widgets here to appear in your footer.', 'wireframe' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
@@ -370,9 +370,9 @@ function wireframe_widgets_init() {
 	);
 	register_sidebar(
 		array(
-			'name'          => __( 'Global Header Widget Area', 'twentyseventeen' ),
+			'name'          => __( 'Global Header Widget Area', 'wireframe' ),
 			'id'            => 'sidebar-4',
-			'description'   => __( 'Add widgets to appear in the global header.', 'twentyseventeen' ),
+			'description'   => __( 'Add widgets to appear in the global header.', 'wireframe' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
@@ -400,7 +400,7 @@ function wireframe_excerpt_more( $link ) {
 		'<p class="link-more"><a href="%1$s" class="more-link">%2$s</a></p>',
 		esc_url( get_permalink( get_the_ID() ) ),
 		/* translators: %s: Name of current post */
-		sprintf( __( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'twentyseventeen' ), get_the_title( get_the_ID() ) )
+		sprintf( __( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'wireframe' ), get_the_title( get_the_ID() ) )
 	);
 	return ' &hellip; ' . $link;
 }
@@ -491,8 +491,8 @@ function wireframe_scripts() {
 
 	if ( has_nav_menu( 'main' ) ) {
 		wp_enqueue_script( 'wireframe-navigation', get_theme_file_uri( '/assets/js/navigation.js' ), array( 'jquery' ), '1.0', true );
-		$wireframe_l10n['expand']   = __( 'Expand child menu', 'twentyseventeen' );
-		$wireframe_l10n['collapse'] = __( 'Collapse child menu', 'twentyseventeen' );
+		$wireframe_l10n['expand']   = __( 'Expand child menu', 'wireframe' );
+		$wireframe_l10n['collapse'] = __( 'Collapse child menu', 'wireframe' );
 		$wireframe_l10n['icon']     = wireframe_get_svg(
 			array(
 				'icon'     => 'angle-down',
@@ -505,7 +505,7 @@ function wireframe_scripts() {
 
 	wp_enqueue_script( 'jquery-scrollto', get_theme_file_uri( '/assets/js/jquery.scrollTo.js' ), array( 'jquery' ), '2.1.2', true );
 
-	wp_localize_script( 'wireframe-skip-link-focus-fix', 'twentyseventeenScreenReaderText', $wireframe_l10n );
+	wp_localize_script( 'wireframe-skip-link-focus-fix', 'wireframeScreenReaderText', $wireframe_l10n );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

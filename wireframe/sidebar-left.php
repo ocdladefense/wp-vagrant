@@ -5,7 +5,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
  * @package WordPress
- * @subpackage Twenty_Seventeen
+ * @subpackage wireframe
  * @since 1.0
  * @version 1.0
  */
@@ -14,6 +14,6 @@ if ( ! is_active_sidebar( 'sidebar-5' ) ) {
 }
 ?>
 
-<aside id="sidebar-left" class="ocdla-sidebar widget-area" role="complementary" aria-label="<?php esc_attr_e( 'Left Sidebar', 'twentyseventeen' ); ?>">
+<aside id="sidebar-left" class="ocdla-sidebar widget-area" role="complementary" aria-label="<?php esc_attr_e( 'Left Sidebar', 'wireframe' ); ?>">
 	<?php dynamic_sidebar( 'sidebar-5' ); ?>
 </aside><!-- #secondary -->
