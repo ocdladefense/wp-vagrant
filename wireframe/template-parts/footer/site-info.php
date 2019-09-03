@@ -16,6 +16,6 @@
 	}
 	?>
 	<a href="<?php echo esc_url( __( 'https://info@ocdla.org/', 'twentyseventeen' ) ); ?>" class="imprint">
-		<?php printf( __( 'OCDLA, 101 E 14th, Eugene, OR, 97402 - 541.606.8716 - info@ocdla.org', 'twentyseventeen' ), 'WordPress' ); ?>
+		<?php printf( __( 'Your Company, Your Street, City, State, Zip Code - ###.###.#### - info@yourSite.com', 'wireframe' ), 'WordPress' ); ?>
 	</a>
 </div><!-- .site-info -->
