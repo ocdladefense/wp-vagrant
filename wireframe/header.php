@@ -37,9 +37,15 @@
 				</div><!-- .navigation-main -->
 			<?php endif; ?>
 
-			<?php the_custom_logo(); ?>
+			<?php if (the_custom_logo() == null)
+				?><img class="theImg" src="/wp-content/themes/wireframe/assets/images/defaultLogo.png" style="max-width:100px;" />
+			<?php
+			the_custom_logo(); ?>
 
-			<strong class="tagline"> <?php echo get_bloginfo( 'description', 'display' ); ?> </strong>
+			<strong class="tagline"> <?php if (get_bloginfo() == null)
+			echo "Your Company Tagline Here";
+			
+			echo get_bloginfo( 'description', 'display' ); ?> </strong>
 
 			<?php
 				if ( is_active_sidebar( 'sidebar-4' ) ) {
