@@ -15,7 +15,7 @@
 		the_privacy_policy_link( '', '<span role="separator" aria-hidden="true"></span>' );
 	}
 	?>
-	<a href="<?php echo esc_url( __( 'https://info@ocdla.org/', 'wireframe' ) ); ?>" class="imprint">
+	<a href="<?php echo esc_url( __( 'https://google.com/', 'wireframe' ) ); ?>" class="imprint">
 		<?php printf( __( 'Your Company, Your Street, City, State, Zip Code - ###.###.#### - info@yourSite.com', 'wireframe' ), 'WordPress' ); ?>
 	</a>
 </div><!-- .site-info -->

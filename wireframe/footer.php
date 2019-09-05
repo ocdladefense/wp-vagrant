@@ -39,7 +39,8 @@
 					<?php
 				endif;
 
-				get_template_part( 'template-parts/footer/site', 'info' );
+				if(!is_active_sidebar('sidebar-3'))
+					get_template_part( 'template-parts/footer/site', 'infoDefault' );
 				?>
 			</div><!-- .wrap -->
 		</footer><!-- #colophon -->

@@ -44,20 +44,20 @@ get_header(); ?>
 				<div class="trevor-menu trevor-about-menus">
 					<div class="trevor-menu-label trevor-about-menu-label">Menu #1</div>
 					<?php
-						wp_nav_menu( array('theme_location' => 'aboutOCDLA'));
+						wp_nav_menu( array('theme_location' => 'menu1'));
 					?>
 				</div>
 				<div class="trevor-menu trevor-member-menus">
 					<div class="trevor-menu-label trevor-members-menu-label">Menu #2</div>
 					<?php
-						wp_nav_menu( array('theme_location' => 'members'));
+						wp_nav_menu( array('theme_location' => 'menu2'));
 					?>
 				</div>
 			</div>
 			<div class="trevor-menu trevor-resources-menus">
 				<div class="trevor-menu-label trevor-resources-menu-label">Menu #3</div>
 				<?php
-				wp_nav_menu( array('theme_location' => 'resourcesAndDatabases'));?>
+				wp_nav_menu( array('theme_location' => 'menu3'));?>
 			</div>
 		</div>
 
