@@ -31,7 +31,7 @@ body{
 	padding:20px;
 }
 .site-header{
-	background-image:linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url(/wp-content/themes/wireframe/assets/images/hero-image.jpg);
+	background-image:linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url(/wp-content/themes/wireframe/assets/images/defaultBannerImage.jpg);
 	background-repeat: no-repeat;
 	margin:auto;
 	background-size: cover;
@@ -72,7 +72,7 @@ body{
 #top-navigation .menu-toggle {
 	display:none;
 }
-.twentyseventeen-front-page .site-content {
+.wireframe-front-page .site-content {
 	padding:2%;
 }
 .tagline {
@@ -253,6 +253,9 @@ body.page-two-column:not(.archive) #primary .entry-content{
 }
 
 .site-info a{
+	font-family: 'Open Sans', sans-serif;
+}
+.site-info aside{
 	font-family: 'Open Sans', sans-serif;
 }
 /*Navigation Sidebars*/
