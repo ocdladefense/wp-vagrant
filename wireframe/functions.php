@@ -63,9 +63,9 @@ function wireframe_setup() {
 		array(
 			'top' => __( 'Top Menu (Short list of key pages located at the top of the page.)', 'wireframe' ),
 			'main' => __('Main Menu (Hamburger Menu)', 'wireframe'),
-			'menu1' => __('Menu # 1', 'wireframe' ),
-			'menu2' => __('Menu # 2', 'wireframe'),
-			'menu3' => __('Menu # 3', 'wireframe'),
+			'menu1' => __('Menu #1', 'wireframe' ),
+			'menu2' => __('Menu #2', 'wireframe'),
+			'menu3' => __('Menu #3', 'wireframe'),
 			'social' => __( 'Social Links Menu', 'wireframe' ),
 		)
 	);
