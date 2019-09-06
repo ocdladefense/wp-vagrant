@@ -42,7 +42,7 @@
 
 	initMainNavigation( $( '.navigation-collapsible' ) );
 
-	menuParent     = $(document);//$( '#masthead' );
+	menuParent     = $( '#masthead' );//$(document);
 	menuToggle     = menuParent.find( '.menu-toggle' );
 	siteNavContain = menuParent.find( '.navigation-collapsible' );
 	siteNavigation = menuParent.find( '.navigation-collapsible > div > ul' );

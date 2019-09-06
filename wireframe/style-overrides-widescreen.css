@@ -22,10 +22,6 @@
 		max-width:80%;
 		margin:0 auto;
 	}
-
-	.menu-toggle{
-			margin:0;
-	}
 	.custom-logo{
 			margin-right: 440px;
 	}
@@ -47,10 +43,6 @@
 	.widget_my_social_widget{
 			padding: 14px 8px 0px 0px;
 	}
-	.js .main-navigation > div > ul{
-			display:none;
-	}
-
 	.widget_nav_menu{
 			display: inline-block;
 			margin: 11px 12px 0 0;

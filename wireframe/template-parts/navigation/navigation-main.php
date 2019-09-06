@@ -9,7 +9,8 @@
  */
 
 ?>
-<nav id="site-navigation" class="main-navigation navigation-collapsible" role="navigation" aria-label="<?php esc_attr_e( 'Main Menu', 'wireframe' ); ?>">
+<!--USE A ID & CLASSNAME OF "main-navigation" if you want to have the menu collapsible on smaller screens-->
+<nav id="main-navigation" class="main-navigation navigation-collapsible" role="navigation" aria-label="<?php esc_attr_e( 'Main Menu', 'wireframe' ); ?>">
 	<button class="menu-toggle" aria-controls="main-menu" aria-expanded="false">
 		<?php
 		echo wireframe_get_svg( array( 'icon' => 'bars' ) );

@@ -62,7 +62,7 @@ function wireframe_setup() {
 	register_nav_menus(
 		array(
 			'top' => __( 'Top Menu (Short list of key pages located at the top of the page.)', 'wireframe' ),
-			'main' => __('Main Menu (Hamburger Menu)', 'wireframe'),
+			'main' => __('Main Menu (Located in the global-header)', 'wireframe'),
 			'menu1' => __('Menu #1', 'wireframe' ),
 			'menu2' => __('Menu #2', 'wireframe'),
 			'menu3' => __('Menu #3', 'wireframe'),
@@ -683,6 +683,8 @@ function add_custom_style_sheet() {
 	wp_enqueue_style( 'custom-post-styling', get_stylesheet_directory_uri() . '/style-overrides-post.css' );
 	if(is_front_page())
 	wp_enqueue_style( 'custom-home-styling', get_stylesheet_directory_uri() . '/style-overrides-home.css' );
+	wp_enqueue_style( 'custom-header-styling', get_stylesheet_directory_uri() . '/style-overrides-header.css' );
+	wp_enqueue_style( 'custom-menu-styling', get_stylesheet_directory_uri() . '/style-overrides-menus.css' );
 	wp_enqueue_style( 'custom-footer-styling', get_stylesheet_directory_uri() . '/style-overrides-footer.css' );
 }
 add_action('wp_enqueue_scripts', 'add_custom_style_sheet');

@@ -28,7 +28,7 @@
 		<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'wireframe' ); ?></a>
 		
 
-		<div class="flex-container global-header" >
+		<div class="flex-container global-header" ><!--global-header-->
 			<?php if ( has_nav_menu( 'main' ) ) : ?>
 				<div class="navigation-main">
 					<div class="wrap">
@@ -42,21 +42,23 @@
 			<?php
 			the_custom_logo(); ?>
 
-			<strong class="tagline"> 
-				<?php 
-					if (get_bloginfo( 'description', 'display' ) == "")
-						echo "Your Company Tagline Here";
-					else
-						echo get_bloginfo( 'description', 'display' ); 
-				?>
-			</strong>
+			<div class="tagline-container">
+				<strong class="tagline"> 
+					<?php 
+						if (get_bloginfo( 'description', 'display' ) == "")
+							echo "Your Company Tagline Here";
+						else
+							echo get_bloginfo( 'description', 'display' ); 
+					?>
+				</strong>
+			</div> <!--tagline-container-->
 
 			<?php
 				if ( is_active_sidebar( 'sidebar-4' ) ) {
 					dynamic_sidebar( 'sidebar-4' );
 				}
 			?>
-		</div>
+		</div><!--global-header-->
 
 		<header id="masthead" class="site-header" role="banner">
 			<?php
@@ -79,7 +81,7 @@
 			?>
 			<?php if ( has_nav_menu( 'top' ) ) : ?>
 				<div class="navigation-top">
-					<div class="wrap">
+					<div  id="cssmenu" class="wrap">
 						<?php get_template_part( 'template-parts/navigation/navigation', 'top' ); ?>
 					</div><!-- .wrap -->
 				</div><!-- .navigation-top -->
