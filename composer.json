@@ -1,0 +1,7 @@
+{
+    "name": "clickpdx/wireframe-wordpress-theme",
+    "description": "Base/parent theme for WordPress 5.x",
+    "require": {
+        "php": "^7.2"
+    }
+}
