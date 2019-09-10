@@ -113,6 +113,9 @@
 #cssmenu{
     width:fit-content;
 }
+#cssmenu{
+  border:none;
+}
 .main{
   display:none;
 }
