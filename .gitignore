@@ -1,0 +1,16 @@
+.DS_Store
+.ansible
+.bundle
+.envrc
+.github/
+.idea/
+.travis.yml
+.vagrant
+npm-debug.log
+package.box
+playbook.retry
+
+
+# If wordpress exists in the working directory
+# for example, if downloaded by Vagrant, then ignore it.
+wordpress

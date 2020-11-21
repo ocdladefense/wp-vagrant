@@ -1,0 +1,116 @@
+@media screen and (min-width:1200px){
+	/*Global Header Styles*/
+	.global-header {
+		padding:11px;
+	}
+	
+
+	.admin-bar .global-header {
+		margin-top: 32px;
+	}
+	
+	.site-content-contain {
+		padding:0px;
+	}
+	
+	.site-header {
+        height: 720px;
+		text-align:center;
+	}
+	
+	.site-header > div {
+		max-width:80%;
+		margin:0 auto;
+	}
+	.custom-logo{
+			margin-right: 440px;
+	}
+	.custom-logo-link img{
+		height:40px;
+	}
+	.custom-logo-link{
+			padding-right: 0px;
+			margin: 0 auto;
+	}
+	body:not(.home) .site-header{
+			height: 85px;
+	}
+
+	.tagline{
+			display: inline-block;
+			margin-left: 23%;
+	}
+	.widget_my_social_widget{
+			padding: 14px 8px 0px 0px;
+	}
+	.widget_nav_menu{
+			display: inline-block;
+			margin: 11px 12px 0 0;
+	}
+	/*Banner widget area styles*/
+	.banner-widget-area{
+		text-align: center;
+	}
+
+	/*Sidebars*/
+.ocdla-sidebar, #primary.single-post{
+			display: inline-block;
+			border-style: none;
+	}
+	body.page-two-column:not(.archive) #primary .entry-header{
+			float:none;
+			width:auto;
+	}
+	.basic-page{
+			padding:0px 75px 0px 75px;
+	}
+	/*Home page menus*/
+	.homePageMenus{
+			width: 70%;
+			margin: 0 auto;
+			max-width: 1045px;
+			margin-top: 8%;
+			margin-bottom: 8%;
+	}
+	.trevor-menu ul{
+			column-count: 2;
+			margin: 0 auto;
+			margin-top: 2%;
+	}
+	.trevor-resources-menus{
+			display:inline-block;
+	}
+	.homepage-menu-column{
+			width:45%;
+			display:inline-block;
+	}
+	.trevor-about-menu-label{
+			width:190px;
+	}
+	.trevor-members-menu-label{
+			width:130px;
+	}
+	.trevor-resources-menu-label{
+			width:330px;
+	}
+	/*Post styles*/
+	.trevor-posts article{
+		display: inline-block;
+		width:49%;
+		vertical-align: top;
+	}
+	.trevor-posts .wp-block-image figure.alignleft{
+		margin-right:0;
+	}
+	.trevor-posts .entry-title{
+		width: 55%;
+		float: right;
+		padding-left: 3%;
+	}
+	
+	/*Footer Styles*/
+	.site-info{
+		font-size: 17px;
+	}
+
+}

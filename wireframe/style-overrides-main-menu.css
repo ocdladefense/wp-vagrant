@@ -1,0 +1,51 @@
+/*Main Menu overrides*/
+#main-menu ul {
+    z-index: 999;  
+    overflow: visible;
+}
+.js .menu-toggle {
+    color: black;
+}
+.navigation-main {
+	float: none;
+	padding:0px !important;
+	display:inline-block;
+	left: -25px;
+	margin-left: -25px;
+	margin-right: 25px;
+}
+.navigation-main .menu-scroll-down {
+    display:none;
+}
+.navigation-main li {
+    width: 230px;
+    border: 0;
+    display: inline-block;
+}
+.navigation-main .wrap {
+    padding:0;
+}
+
+.global-header .menu-main-menu-container {
+	position: absolute;
+  background-color: #fff;
+  top: 50px;
+}
+
+.global-header .toggled-on .menu-main-menu-container {
+  padding:3%;
+}
+
+.global-header .menu-main-menu-container {
+	overflow-y:scroll;
+	padding-bottom:350px;
+	height:100%;
+}
+
+.js #site-navigation .menu-toggle {
+	position:relative;
+	left:25px;
+}
+.navigation-main{
+	display:none;
+}

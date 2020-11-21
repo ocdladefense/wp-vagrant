@@ -1,0 +1,10 @@
+/*Styles for the global-header and banner area*/
+.tagline-container{
+    display: inline-block;
+    width: 80%;
+    height: 100%;
+    text-align: center;
+    margin-left: -8%;
+}
+@media screen and (max-width:750px){
+}

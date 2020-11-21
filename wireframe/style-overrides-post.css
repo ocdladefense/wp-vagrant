@@ -1,0 +1,31 @@
+/*Styles for the posts*/
+
+.trevor-posts .entry-content p,
+.trevor-posts .entry-content h1,
+.trevor-posts .entry-content h2,
+.trevor-posts .entry-content h3,
+.trevor-posts .entry-content h4,
+.trevor-posts .entry-content h5,
+.trevor-posts .entry-content h6,
+.trevor-posts .entry-content ul,
+.trevor-posts .entry-content li
+{
+	color:rgb(100, 120, 160);
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+}
+.trevor-posts .entry-content li{
+	width: 100%;
+	float: left;
+}
+.trevor-posts .entry-content ul{
+	padding-left: 5%;
+}
+
+/*new style changes 9/5 */
+
+.trevor-posts article img {
+    width: 100%;
+    height: 100%;
+    padding-right: 10px;
+}
